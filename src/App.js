@@ -1,11 +1,10 @@
-import DefaultButton from './components/defaultButton';
+//import DefaultButton from './components/defaultButton';
+import { TelaHome } from './pages/TelaHome/TelaHome.js';
 
 function App() {
   return (
     <div className="App">
-        <h1>Hello</h1>
-        <br></br>
-        <DefaultButton name="TELA HOME - WELCOME"/>
+        <TelaHome />
     </div>
   );
 }

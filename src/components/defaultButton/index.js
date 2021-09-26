@@ -27,7 +27,7 @@ export default function CustomizedButtons(props) {
 
   return (
     <Stack spacing={2} direction="row">
-      <ColorButton variant="contained" onClick={incrementar}>{props.name} + {count}</ColorButton>
+      <ColorButton variant="contained" onClick={incrementar}>{props.name}</ColorButton>
     </Stack>
   );
 }

@@ -1,0 +1,24 @@
+.bg-home{
+    width: auto;
+    height: 25rem;
+    background-image: url("../../images/bg-neon.jpg");
+    background-size: cover;
+    background-repeat:repeat-x;
+    background-position: center top;
+    background-attachment: fixed;
+
+}
+
+.default-text{
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.align{
+    padding-left: 10rem;
+}
+
