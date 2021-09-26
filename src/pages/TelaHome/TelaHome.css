@@ -28,3 +28,7 @@
     text-decoration: none;   
 
 }
+
+.divider{
+    border: solid 2px #e57373;
+}

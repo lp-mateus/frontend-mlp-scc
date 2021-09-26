@@ -1,8 +1,8 @@
 import './TelaHome.css';
+import Laptop from '../../images/laptop.png';
 import Grid from '@mui/material/Grid';
 import Button from '../../components/defaultButton';
 //import TopBar from '../../components/topBar';
-import CadastoCard from '../../components/cadastroCard';
 
 export function TelaHome(){
     return(
@@ -45,12 +45,43 @@ export function TelaHome(){
             </p>
             <br></br>
             <br></br>
-            <br></br>
-            <CadastoCard />
 
+            <div>
+                <hr className="divider"></hr>
+                <br></br>
+                <Grid 
+                    container 
+                    spacing={2}
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center"  
+                    align="center"             
+                >
+
+                    <Grid item xs={0} md={4}>  
+                        <h3>Cadastro e Registro de Clientes</h3>
+                        <img src={Laptop} alt="Card Icon de Laptop"></img>    
+                        <Button name="Realizar Cadastro"/>                                
+                    </Grid>
+
+                    <Grid item xs={12} md={4}>
+                        <h3>Cadastro e Registro de Clientes</h3>
+                        <img src={Laptop} alt="Card Icon de Laptop"></img>    
+                        <Button name="Realizar Cadastro"/> 
+                    </Grid>
+
+                    <Grid item xs={0} md={4}>   
+                        <h3>Cadastro e Registro de Clientes</h3>
+                        <img src={Laptop} alt="Card Icon de Laptop"></img>    
+                        <Button name="Realizar Cadastro"/>   
+                    </Grid>
+                </Grid>
+                <br></br>
+                <hr className="divider"></hr>
+            </div>
         </div>
 
-
+        <br></br>
         </>
     )
 }
