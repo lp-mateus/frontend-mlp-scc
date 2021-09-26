@@ -1,33 +1,31 @@
-import * as React from 'react';
-import { useState } from 'react';
-import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import { red } from '@mui/material/colors';
+import Button from '@material-ui/core/Button';
 
-const ColorButton = styled(Button)(({ theme }) => ({
-  fontFamily: '"Segoe UI"',
-  borderRadius: '1rem',
-  color: "whitesmoke",
-  backgroundColor: red[300],
-  '&:hover': {
-    backgroundColor: red[700],
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 345,
   },
-}));
+  style:{
+    fontFamily: '"Segoe UI"',
+    minWidth: '15rem',
+    minHeight: '2rem',
+    borderRadius: '1rem',
+    color: "whitesmoke",
+    backgroundColor: red[300],
+    '&:hover': {
+        backgroundColor: red[700],
+  },
+  },
+});
 
-export default function CustomizedButtons(props) {
-  // Váriavel de estado - Hook useState
-  const [count, setCount] = useState(0);
-
-  // Método complexo que utiliza o setCount (Atualiza o estado)
-  function incrementar(){
-    setCount(count + 1);
-    console.log(count);
-  }
+export default function DefaultButton(props) {
+  const classes = useStyles();
 
   return (
-    <Stack spacing={2} direction="row">
-      <ColorButton variant="contained" onClick={incrementar}>{props.name}</ColorButton>
-    </Stack>
+    
+    <Button className={classes.style}>{props.name}</Button>
+
   );
 }
