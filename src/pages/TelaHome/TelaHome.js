@@ -1,4 +1,6 @@
 import './TelaHome.css';
+import Phone from '../../images/smartphone.jpg';
+import Mail from '../../images/gmail.png';
 import Laptop from '../../images/laptop.png';
 import System from '../../images/computer.jpg';
 import Grid from '@mui/material/Grid';
@@ -46,9 +48,9 @@ export function TelaHome(){
             </p>
             
             <br></br>
-            <br></br>
 
-            <div>         
+            <div>  
+                 
                 <Grid 
                     container 
                     spacing={2}
@@ -59,21 +61,21 @@ export function TelaHome(){
                 >
 
                     <Grid item xs={12} md={4}>  
-                        <h3>Cadastro e Registro de Clientes</h3>
+                        <h2>Cadastro e registro de clientes</h2>
                         <img src={Laptop} alt="Card Icon de Laptop"></img>    
-                        <Button name="Realizar Cadastro"/>                                
+                        <Button name="Cadastro de clientes"/>                             
                     </Grid>
 
                     <Grid item xs={12} md={4}>
-                        <h3>Cadastro e Registro de Clientes</h3>
+                        <h2>Acesso rápido e fácil a todos os dados</h2>
                         <img src={Laptop} alt="Card Icon de Laptop"></img>    
-                        <Button name="Realizar Cadastro"/> 
+                        <Button name="Busca de clientes"/> 
                     </Grid>
 
                     <Grid item xs={12} md={4}>   
-                        <h3>Cadastro e Registro de Clientes</h3>
-                        <img src={Laptop} alt="Card Icon de Laptop"></img>    
-                        <Button name="Realizar Cadastro"/>   
+                        <h2>Gerencie e organize sua base de clientes</h2>
+                        <img src={Laptop} alt="Card Icon de Laptop"></img>      
+                        <Button name="Gerenciar base de clientes"/> 
                     </Grid>
                 </Grid>
                 <br></br>
@@ -93,7 +95,35 @@ export function TelaHome(){
             align="center"             
         >
             <Grid item xs={12} md={12}>
-            <h1>Contato - Saiba Mais</h1>
+            <h1>Torne seu negócio totalmente digital</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at pulvinar ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ipsum augue, fringilla ac turpis id, feugiat venenatis dui. Proin et mi et ante porttitor pellentesque. Vestibulum cursus convallis neque. Etiam in pretium dui. Quisque interdum massa nec tellus porta, id cursus lacus aliquam. Sed pulvinar in dolor in sollicitudin.
+            </p>
+            <br></br>  
+            <div>
+             <img src={Phone} alt="Imagem de sistema" className="img-resize"></img>
+            </div>
+            <Button name="Quero saber mais"/> 
+            </Grid>        
+        </Grid>
+        </div>
+
+        <br></br>
+        <hr className="divider"></hr>
+
+        <br></br>
+
+        <div className="cofig-contact">
+        <Grid 
+            container 
+            spacing={2}
+            direction="row"
+            justifyContent="center"
+            alignItems="center"  
+            align="center"             
+        >
+            <Grid item xs={12} md={12}>
+            <h1>Soluções para você</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at pulvinar ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ipsum augue, fringilla ac turpis id, feugiat venenatis dui. Proin et mi et ante porttitor pellentesque. Vestibulum cursus convallis neque. Etiam in pretium dui. Quisque interdum massa nec tellus porta, id cursus lacus aliquam. Sed pulvinar in dolor in sollicitudin.
             </p>
@@ -101,10 +131,20 @@ export function TelaHome(){
             <div>
              <img src={System} alt="Imagem de sistema" className="img-resize"></img>
             </div>
-            <Button name="Entre em Contato"/> 
-            </Grid>
-        
+            <Button name="Solicitar Projeto"/> 
+            </Grid>        
         </Grid>
+        </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <div className="footer">
+            <br></br>
+            <img src={Mail} alt="Imagem de sistema"></img>
+            <h3>Created by: MLP - Soluções Digitais</h3>
+            <p>https://www.linkedin.com/in/mateus-leite-1021a716b</p>
         </div>
         
         </>
