@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -14,7 +13,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-//import '../../styles/app.css';
+import '../../index.css';
 
 const drawerWidth = 240;
 
@@ -109,11 +108,11 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          <NavLink to="/" className="link-padrao">
+          <a href="/" className="link-padrao">
             <Typography variant="h6" noWrap>
               Sistema de Cadastro
             </Typography>
-          </NavLink>          
+          </a>          
         </Toolbar>
       </AppBar>
       <Drawer
@@ -132,24 +131,24 @@ export default function PersistentDrawerLeft() {
         </div>
         <List>
           <ListItem button>
-              <NavLink to="/" className="link-topbar">
+              <a href="/" className="link-topbar">
                 <ListItemText>Home</ListItemText>
-              </NavLink>                                     
+              </a>                                     
           </ListItem>
           <ListItem button>
-              <NavLink to="/menu" className="link-topbar">
+              <a href="/" className="link-topbar">
                 <ListItemText>Login</ListItemText>
-              </NavLink>                                     
+              </a>                                     
           </ListItem>
           <ListItem button>
-              <NavLink to="/contato" className="link-topbar">
+              <a href="/" className="link-topbar">
                 <ListItemText>Contato</ListItemText>
-              </NavLink>                                     
+              </a>                                     
           </ListItem>
           <ListItem button>
-              <NavLink to="/sobre" className="link-topbar">
+              <a href="/" className="link-topbar">
                 <ListItemText>Sobre</ListItemText>
-              </NavLink>                                     
+              </a>                                     
           </ListItem>
         </List>
       </Drawer>
