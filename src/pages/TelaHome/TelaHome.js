@@ -141,10 +141,11 @@ export function TelaHome(){
         <br></br>
 
         <div className="footer">
-            <br></br>
-            <img src={Mail} alt="Imagem de sistema"></img>
-            <h3>Created by: MLP - Soluções Digitais</h3>
-            <p>https://www.linkedin.com/in/mateus-leite-1021a716b</p>
+            <img src={Mail} alt="Imagem de sistema"></img>      
+            <h3><i>Created by - MLP Soluções Digitais</i></h3>     
+            <a href="https://www.linkedin.com/in/mateus-leite-1021a716b" className="link-default">
+                <p>Acesse nosso perfil nas Redes Sociais (Linkedin)</p>
+            </a>                      
         </div>
         
         </>
